@@ -35,5 +35,7 @@ int main()
 
 	shmdt(p);
 
+	shmctl(nshmid, IPC_RMID, 0);
+
 	return 0;
 }
